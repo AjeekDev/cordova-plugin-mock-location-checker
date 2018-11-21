@@ -173,7 +173,7 @@ public class MockLocationChecker extends CordovaPlugin{
                     listenerON = true;
 
                     // Register the listener with the Location Manager to receive location updates
-                    locationManager.requestLocationUpdates(LOCATION_PROVIDER, 15000, 0, locationListener);
+                    locationManager.requestLocationUpdates(LOCATION_PROVIDER, 1000, 0, locationListener);
 
                 }else{
                     callbackContext.success(arrayGPS);
